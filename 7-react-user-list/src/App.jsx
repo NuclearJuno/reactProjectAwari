@@ -5,15 +5,15 @@ function App() {
   const users = [
     {
       id: 0,
-      name: 'Siri'
+      name: 'Mushishi'
     },
     {
       id: 1,
-      name: 'Alexa'
+      name: 'Bleach'
     },
     {
       id: 2,
-      name: 'Google Assistente'
+      name: 'Dorohedoro'
     }
   ];
 

@@ -9,7 +9,7 @@ function List({ items = [] }) {
 
   return (
     <div>
-      <h2>Lista de Usuários</h2>
+      <h2>Lista de Mangás</h2>
       <ul>
         {map}
       </ul>
