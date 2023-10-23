@@ -1,33 +1,26 @@
 import './App.css';
 import List from './components/List';
-import Title from './components/Title';
 
 function App() {
   const users = [
     {
       id: 0,
-      name: "Laura",
+      name: 'Siri'
     },
     {
       id: 1,
-      name: "Troye",
+      name: 'Alexa'
     },
     {
       id: 2,
-      name: "Angus",
-    },
-    {
-      id: 3,
-      name: "Clara",
-    },
-  ]
+      name: 'Google Assistente'
+    }
+  ];
+
+
   return (
     <div>
-      <Title label="Hello
-      ! World"/>
-      <Title label="olá ! Mundo"/>
-      <Title label="olá Awari "/>
-      <List items= {users}/>
+      <List items={users} />
     </div>
   );
 }
