@@ -1,23 +1,23 @@
-import{ Link, useParams } from 'react-router-dom';
-import { users } from "../../data";
-import { useEffect, useState } from 'react';
+import { Link, useParams } from 'react-router-dom'
+import { users } from '../../data'
+import { React, useEffect, useState } from 'react'
 
 const Details = () => {
-    const parameters = useParams();
+  const parameters = useParams()
 
-    const [user, setUser] = useState(undefined);
+  const [user, setUser] = useState(undefined)
 
-    useEffect(() => {
-        const { id } = parameters;
-        const result = users.find((element) => element.id === id);
-        if (!result) {
-            setUser(null);
-            return;
-        }
-        setUser(result);
-    }, [parameters]);
+  useEffect(() => {
+    const { id } = parameters
+    const result = users.find((element) => element.id === id)
+    if (!result) {
+      setUser(null)
+      return
+    }
+    setUser(result)
+  }, [parameters])
 
-    return (
+  return (
         <div>
             <h1>Detalhes</h1>
             {user === undefined && (
@@ -39,7 +39,7 @@ const Details = () => {
             )}
             <Link to='/'>Voltar</Link>
         </div>
-    );
-};
+  )
+}
 
-export default Details;
+export default Details
