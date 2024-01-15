@@ -32,7 +32,7 @@ export const users = [
         description: 'lorem Ips incorrectly spelled person in a pluralized English language group Lorem Ips incorrectly spelled person in a pluralized English language group',
         image: {
             alt: 'shin',
-            src: 'https://static.wikia.nocookie.net/dorohedoro/images/c/c0/Shin_Without_Mask.jpg/revision/latest/scale-to-width-down/274?cb=20150304031656',
+            src: 'https://static.wikia.nocookie.net/dorohedoro/images/c/c0/Shin_Without_Mask.jpg',
         }
     },
     {
