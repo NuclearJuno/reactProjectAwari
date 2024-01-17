@@ -3,12 +3,17 @@
     "browser": true,
     "es2021": true
   },
-  "extends": [
-    "standard",
-    "plugin:react/recommended"
+  "extends": [ "react-app", "react-app/jest"
   ],
   "overrides": [
+    {
+      "files": ["src/**/*.js", "src/**/*.jsx"],
+      "rules": {
+        // Configurações específicas para arquivos JSX na pasta "src"
+      }
+    }
   ],
+  
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
