@@ -1,17 +1,17 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import { Home, Details, Error } from '../../pages'
-import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Home, Details, Error } from '../../pages';
+import React from 'react';
 
 const Router = () => {
   return (
-        <BrowserRouter>
-            <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/details/:id" element={<Details />} />
-                    <Route path="*" element={<Error />} />
-            </Routes>
-        </BrowserRouter>
-  )
-}
-export default Router
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/details/:id" element={<Details />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+export default Router;
 

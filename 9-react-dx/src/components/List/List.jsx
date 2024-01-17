@@ -1,15 +1,15 @@
-import Item from '../Item'
-import React from 'react'
+import Item from '../Item';
+import React from 'react';
 
 function List({ items = [], onItemClick }) {
   const handleOnItemClick = (item) => {
-    onItemClick(item)
-  }
+    onItemClick(item);
+  };
   const map = items.map((item) => {
     return (
       <Item key={item.id} item={item} onItemClick={handleOnItemClick} />
-    )
-  })
+    );
+  });
 
   return (
     <div>
@@ -18,7 +18,7 @@ function List({ items = [], onItemClick }) {
         {map}
       </ul>
     </div>
-  )
+  );
 }
 
-export default List
+export default List;
