@@ -1,4 +1,4 @@
-import { useCallBack, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { AppContext } from './AppContext';
 
@@ -6,16 +6,16 @@ import { getInitialState } from './getInitialState';
 
 export const AppProvider = ({ children }) => {
     const [favorites, setFavorites] = useState(getInitialState);
-    const add = useCallBack((item) => {
+    const add = (item) => {
         setFavorites([...favorites, item.id]);
-    }, [favorites]);
-    const remove = useCallBack((item) => {
+    };
+    const remove = (item) => {
         const filtered = favorites.filter((id) => id !== item.id);
         setFavorites(filtered);
-    }, [favorites]);
-    const set = useCallBack((item) => {
+    };
+    const set = (item) => {
         setFavorites(item);
-    }, []);
+    };
     useEffect(() => {
         localStorage.setItem('favorites', JSON.stringify(favorites));
     });

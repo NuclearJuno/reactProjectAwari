@@ -1,0 +1,18 @@
+.list-item-heart-wrapper{
+    position: absolute;
+    top:20px;
+    left:20px;
+    width: 20px;
+}
+.heart {
+    cursor: pointer;
+    fill: lightgrey;
+}
+
+.heart-selected{
+    fill: rgb(255, 17, 0);
+}
+
+.heart:hover{
+    fill: rgb(0, 0, 0);
+}

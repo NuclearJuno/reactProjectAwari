@@ -7,8 +7,11 @@
     flex-direction: column;
     justify-content: center;
     width: 200px;
+    position: relative;
     padding: 10px 5px;
 }
+
+
 
 .list-item-image-wrapper {
     width: 100%;
