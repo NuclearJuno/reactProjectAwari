@@ -20,8 +20,10 @@ function App() {
 
     Promise.all(promises)
       .then((data) => {
-        setItems(data);
-        setLoading(false);
+        setTimeout(() => {
+          setItems(data);
+          setLoading(false);
+        }, 2000);
       });
   }
 

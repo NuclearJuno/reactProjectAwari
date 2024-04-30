@@ -4,19 +4,20 @@ import './App.css';
 
 
 function App() {
-  const [items, setItems] = useState([]);
+  const [itemState, setItemState] = useState([]);
 
-  const loadDetails = (items) => {
-    const promises = items.map((item) => {
+  const loadDetails = (datapokemon) => {
+
+    const promises = datapokemon.map((item) => {
       return fetch(item.url).then((response) => response.json())
     });
     Promise.all(promises)
-      .then((data) => {
-        setItems(data);
+      .then((items) => {
+        setItemState(items);
       });
   }
-
   useEffect(() => {
+    // 
     fetch('https://pokeapi.co/api/v2/pokemon?limit=20')
       .then((response) => {
         return response.json();
@@ -28,11 +29,13 @@ function App() {
       .catch(() => {
         console.error('Error');
       });
-  }, []);
+  }, []
+  );
 
   return (
     <div>
-      <List items={items} />
+      <h1>Pokedex</h1>
+      <List items={itemState} />
     </div>
   );
 }
