@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^9.1.1"
+    "eslint": "^9.1.1",
+    "husky": "^9.0.11"
   }
 }
